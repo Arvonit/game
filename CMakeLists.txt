@@ -25,17 +25,8 @@ FetchContent_Declare(sfml
     SYSTEM)
 FetchContent_MakeAvailable(sfml)
 
-# FMT Library
-FetchContent_Declare(
-    fmt
-    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-    GIT_TAG master
-    GIT_SHALLOW ON
-)
-FetchContent_MakeAvailable(fmt)
-
 add_executable(game ${SOURCES})
-target_link_libraries(game PRIVATE sfml-graphics fmt)
+target_link_libraries(game PRIVATE sfml-graphics)
 target_compile_options(game PRIVATE
     -Wall -Wextra -Wpedantic -Werror -Wno-error=unused-parameter -Wno-error=unused-variable
     -Wno-error=unused-but-set-variable)

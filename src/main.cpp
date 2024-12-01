@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <print>
 
 int main() {
     auto window = sf::RenderWindow({1920u, 1080u}, "CMake SFML Project");
@@ -7,6 +8,7 @@ int main() {
     while (window.isOpen()) {
         for (auto event = sf::Event(); window.pollEvent(event);) {
             if (event.type == sf::Event::Closed) {
+                std::println("Window has closed (now using std::println)");
                 window.close();
             }
         }
