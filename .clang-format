@@ -7,11 +7,14 @@ AllowShortFunctionsOnASingleLine: None
 AlwaysBreakTemplateDeclarations: Yes
 ColumnLimit: 100
 AlignAfterOpenBracket: Align
-PenaltyBreakBeforeFirstCallParameter: 10000
+PenaltyBreakBeforeFirstCallParameter: 9000
 BinPackArguments: false
+BinPackParameters: false
 DerivePointerAlignment: true
+# PointerAlignment: Left
 FixNamespaceComments: false
 AccessModifierOffset: -4
+AllowShortEnumsOnASingleLine: false
 # From 3150 repo
 # ---
 # BasedOnStyle: LLVM
